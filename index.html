@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Ebook.com</title>
+
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <div class="container">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logo.png" alt="Logo" width="225" />
+        </a>
+
+        <!-- Navbar Toggler Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="main">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <div class="image-container">
+              <img
+                src="images/header-ebook.png"
+                alt="Header Image"
+                class="header-img d-block img-fluid"
+                width="700"
+                height="500"
+                loading="lazy"
+                style="float: left; margin-right: 30px"
+              />
+            </div>
+          </div>
+
+          <!-- Text Content -->
+          <div class="col-lg-6">
+            <div
+              class="text-container p-4 d-flex flex-column justify-content-center"
+            >
+              <h1
+                class="header-h1 display-5 fw-bold text-body-emphasis ih-1 mb-3"
+              >
+                Welcome to my Blog Mastery
+              </h1>
+              <p class="header-p lead">
+                Are you ready to take your blogging journey to new heights? Blog
+                Mastery is your ultimate guide to creating and managing a
+                successful blog that captivates your audience and drives
+                engagement.
+              </p>
+
+              <!-- Form -->
+
+              <div class="form-container text-center">
+                <form>
+                  <div class="my-4">
+                    <input
+                      type="email"
+                      class="form-control form-control-lg rounded-5"
+                      placeholder="Email Address"
+                    />
+                  </div>
+
+                  <div class="d-grid">
+                    <button class="btn btn-primary btn-lg text-white">
+                      Free Download
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="features">
+      <div class="container mt-5 id=features-3">
+        <div class="row g-4 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div
+              class="icon-square feature-icon d-inline-flex align-items-center justify-content-center bg-body-secondary bg-gradient fs-2 mb-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30"
+                fill="currentColor"
+                class="bi bi-check2-circle"
+                viewBox="0 0 16 16"
+                class="bg-info"
+              >
+                <path
+                  d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
+                />
+                <path
+                  d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
+                />
+              </svg>
+            </div>
+
+            <h3 class="fs-2 text-body-emphasis">
+              Easy to use.
+            </h3>
+            <p>So easy to use, even your dog could do it</p>
+
+            <a href="#" class="icon-link" >
+
+              Call to action
+            <svg class="bi">
+              <use xlink:href="#chevron-right"></use>
+            </svg>    
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature col">
+        <div   class="icon-square feature-icon d-inline-flex align-items-center justify-content-center bg-body-secondary bg-gradient fs-2 mb-3">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="30"
+          fill="currentColor"
+          class="bi bi-check2-circle"
+          viewBox="0 0 16 16"
+          class="bg-info"
+        >
+          <path
+            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
+          />
+          <path
+            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
+          />
+        </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS (Make sure this is included for navbar toggling) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
