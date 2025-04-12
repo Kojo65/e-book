@@ -14,17 +14,21 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
       <div class="container">
-        <!-- Logo -->
         <a href="index.html" class="navbar-brand">
           <img src="images/logo.png" alt="Logo" width="225" />
         </a>
 
-        <!-- Navbar Toggler Button -->
         <button
           class="navbar-toggler"
           type="button"
@@ -37,20 +41,19 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -75,37 +78,35 @@
             </div>
           </div>
 
-          <!-- Text Content -->
           <div class="col-lg-6">
             <div
               class="text-container p-4 d-flex flex-column justify-content-center"
             >
-              <h1
-                class="header-h1 display-5 fw-bold text-body-emphasis ih-1 mb-3"
-              >
-                Welcome to my Blog Mastery
+              <h1 class="display-5 fw-bold text-body-emphasis mb-3">
+                Welcome to Blog Mastery
               </h1>
-              <p class="header-p lead">
-                Are you ready to take your blogging journey to new heights? Blog
-                Mastery is your ultimate guide to creating and managing a
+              <p class="lead">
+                Are you ready to take your blogging journey to new heights?
+                Blog Mastery is your ultimate guide to creating and managing a
                 successful blog that captivates your audience and drives
                 engagement.
               </p>
 
               <!-- Form -->
-
               <div class="form-container text-center">
                 <form>
                   <div class="my-4">
                     <input
                       type="email"
+                      name="email"
+                      required
                       class="form-control form-control-lg rounded-5"
                       placeholder="Email Address"
                     />
                   </div>
 
                   <div class="d-grid">
-                    <button class="btn btn-primary btn-lg text-white">
+                    <button type="submit" class="btn btn-primary btn-lg text-white">
                       Free Download
                     </button>
                   </div>
@@ -117,9 +118,11 @@
       </div>
     </div>
 
-    <section id="features">
-      <div class="container mt-5 id=features-3">
+    <!-- Features Section -->
+    <section id="features" class="bg-body-secondary">
+      <div id="features-3" class="container mt-5">
         <div class="row g-4 row-cols-1 row-cols-lg-3">
+          <!-- Feature 1 -->
           <div class="feature col">
             <div
               class="icon-square feature-icon d-inline-flex align-items-center justify-content-center bg-body-secondary bg-gradient fs-2 mb-3"
@@ -128,9 +131,8 @@
                 xmlns="http://www.w3.org/2000/svg"
                 height="30"
                 fill="currentColor"
-                class="bi bi-check2-circle"
+                class="bi bi-check2-circle bg-info"
                 viewBox="0 0 16 16"
-                class="bg-info"
               >
                 <path
                   d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
@@ -140,45 +142,101 @@
                 />
               </svg>
             </div>
-
-            <h3 class="fs-2 text-body-emphasis">
-              Easy to use.
-            </h3>
-            <p>So easy to use, even your dog could do it</p>
-
-            <a href="#" class="icon-link" >
-
+            <h3 class="fs-2 text-body-emphasis">Easy to use.</h3>
+            <p>So easy to use, even your dog could do it.</p>
+            <a href="#" class="icon-link">
               Call to action
-            <svg class="bi">
-              <use xlink:href="#chevron-right"></use>
-            </svg>    
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
             </a>
           </div>
-        </div>
-      </div>
 
-      <div class="feature col">
-        <div   class="icon-square feature-icon d-inline-flex align-items-center justify-content-center bg-body-secondary bg-gradient fs-2 mb-3">
-          <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="30"
-          fill="currentColor"
-          class="bi bi-check2-circle"
-          viewBox="0 0 16 16"
-          class="bg-info"
-        >
-          <path
-            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
-          />
-          <path
-            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
-          />
-        </svg>
-        </div>
+          <!-- Feature 2 -->
+          <div class="feature col">
+            <div
+              class="icon-square feature-icon d-inline-flex align-items-center justify-content-center bg-body-secondary bg-gradient fs-2 mb-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30"
+                fill="currentColor"
+                class="bi bi-mortarboard bg-info"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"
+                />
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Learn as You Grow</h3>
+            <p>Access tutorials, guides, and support every step of the way.</p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <!-- Feature 3 -->
+          <div class="feature col">
+            <div
+              class="icon-square feature-icon d-inline-flex align-items-center justify-content-center bg-body-secondary bg-gradient fs-2 mb-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30"
+                fill="currentColor"
+                class="bi bi-mortarboard bg-info"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"
+                />
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Guaranteed to work</h3>
+            <p>Find the love of your dog's life or your money back.</p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div> 
       </div>
     </section>
+    
+     <!-- Footer -->
+    <footer class="border-top border-primary bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link link-light">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#details" class="nav-link link-light">Details</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link link-light">Contact</a>
+              </li>
+            </ul>
+          </div>
 
-    <!-- Bootstrap JS (Make sure this is included for navbar toggling) -->
+          <div class="col-md-4">
+            <p class="text-end d-none d-md-block">
+              Copyright &copy; Blog Mastery 2023
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
